@@ -1,8 +1,18 @@
-import { Component, OnInit, Input, Output, EventEmitter, SimpleChanges, OnChanges, ViewChild, TemplateRef } from '@angular/core';
-import { YearCalendarService } from '../../year-calendar.service';
-import { YCConfig } from '../../year-calendar-interfaces';
-import { CdkOverlayOrigin } from '@angular/cdk/overlay';
-import { DEFAULT_CONFIG } from '../../constants/default-config';
+import {
+  Component,
+  OnInit,
+  Input,
+  Output,
+  EventEmitter,
+  SimpleChanges,
+  OnChanges,
+  ViewChild,
+  TemplateRef
+} from '@angular/core';
+import {YearCalendarService} from '../../year-calendar.service';
+import {YCConfig} from '../../year-calendar-interfaces';
+import {CdkOverlayOrigin} from '@angular/cdk/overlay';
+import {DEFAULT_CONFIG} from '../../constants/default-config';
 
 export const DAYS_OF_WEEK = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
 
@@ -23,9 +33,11 @@ export class YearCalendarComponent implements OnInit, OnChanges {
   year = new Date().getFullYear();
   yearData = [];
   maxValueInYear: number;
+
   constructor(
     private ycService: YearCalendarService
-  ) { }
+  ) {
+  }
 
   ngOnInit() {
     this.ycConfig.headerTemplate = this.ycConfig.headerTemplate || this.defaultHeaderTemplate;
@@ -44,8 +56,8 @@ export class YearCalendarComponent implements OnInit, OnChanges {
       if (
         previousValue && currentValue &&
         ((previousValue.data.length !== currentValue.data.length) ||
-        (previousValue.data[0] && currentValue.data[0] &&
-        previousValue.data[0].date !== currentValue.data[0].date)) ||
+          (previousValue.data[0] && currentValue.data[0] &&
+            previousValue.data[0].date !== currentValue.data[0].date)) ||
         (previousValue && this.ycService.isYearDataChanged(previousValue.data, currentValue.data)) ||
         (previousValue && this.ycService.isConfigChanged(previousValue, currentValue))
       ) {
@@ -60,11 +72,6 @@ export class YearCalendarComponent implements OnInit, OnChanges {
     }
   }
 
-  /**
-   * @author Ahsan Ayaz
-   * @desc Creates the months data and assigns to `yearData` which is rendered on the view
-   * @param date - date of the year to render
-   */
   render(year: number = this.year) {
     this.year = year;
     this.daysOfWeek = [...this.getDaysOfWeek()];
@@ -99,7 +106,7 @@ export class YearCalendarComponent implements OnInit, OnChanges {
       lastDayOfMonth,
       monthLastDate
     } = monthWeeksData;
-    let { firstDayOfMonth } = monthWeeksData;
+    let {firstDayOfMonth} = monthWeeksData;
     const daysOfWeeks = [];
     const todayStr = new Date().toDateString(); // will be used to identify if a date is `today`
     let currentDate = 1; // this will keep a count of the overall dates of the months
