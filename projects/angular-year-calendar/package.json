@@ -10,5 +10,21 @@
     "@angular/core": "^14.2.10",
     "date-fns": "^2.5.1"
   },
-  "type": "module"
+  "type": "module",
+  "description": "[![Actions Status](https://github.com/iomechs/angular-year-calendar/workflows/CI/badge.svg)](https://github.com/iomechs/angular-year-calendar/actions)",
+  "main": "karma.conf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlackCoronel/angular-year-calendar.git"
+  },
+  "author": "BlackCoronel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BlackCoronel/angular-year-calendar/issues"
+  },
+  "homepage": "https://github.com/BlackCoronel/angular-year-calendar#readme",
+  "private": false
 }

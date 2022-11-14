@@ -25,9 +25,10 @@
     "e2e": "ng e2e",
     "deploy": "ng deploy demo --base-href=/angular-year-calendar/"
   },
+  "author": "BlackCoronel",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iomechs/angular-year-calendar.git"
+    "url": "git+https://github.com/BlackCoronel/angular-year-calendar"
   },
   "keywords": [
     "iomechs",
@@ -41,7 +42,6 @@
     "ng-calendar"
   ],
   "license": "MIT",
-  "private": false,
   "dependencies": {
     "@angular/animations": "^14.2.10",
     "@angular/cdk": "^14.2.7",
