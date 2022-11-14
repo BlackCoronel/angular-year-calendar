@@ -1,6 +1,6 @@
 {
-  "name": "angular-year-calendar",
-  "version": "0.0.0",
+  "name": "calendario-angular",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -20,12 +20,15 @@
     "copy:demo:ci": "cp -R dist/demo ./docs/demo",
     "pre-release": "npm run lint && npm run copy:readme && npm run copy:license && npm run build:lib && npm run docs:build && npm run changelog",
     "publish:lib": "npm publish dist/angular-year-calendar --access public",
-    "changelog": "./node_modules/.bin/conventional-changelog -p angular -k projects/angular-year-calendar/package.json -i CHANGELOG.md -s && git add CHANGELOG.md",
+    "changelog": "conventional-changelog -p angular -k projects/angular-year-calendar/package.json -i CHANGELOG.md -s && git add CHANGELOG.md",
     "release": "npm run pre-release && npm run publish:lib",
     "e2e": "ng e2e",
     "deploy": "ng deploy demo --base-href=/angular-year-calendar/"
   },
-  "repository": "https://github.com/iomechs/angular-year-calendar",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iomechs/angular-year-calendar.git"
+  },
   "keywords": [
     "iomechs",
     "angular",
@@ -41,9 +44,8 @@
   "private": false,
   "dependencies": {
     "@angular/animations": "^14.2.10",
-    "@angular/cdk": "^9.2.4",
+    "@angular/cdk": "^14.2.7",
     "@angular/common": "^14.2.10",
-    "@angular/compiler": "^14.2.10",
     "@angular/core": "^14.2.10",
     "@angular/forms": "^14.2.10",
     "@angular/platform-browser": "^14.2.10",
@@ -59,8 +61,9 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.2.9",
-    "@angular-devkit/build-ng-packagr": "^0.1002.4",
+    "@angular-devkit/build-ng-packagr": "^0.1002.0",
     "@angular/cli": "^14.2.9",
+    "@angular/compiler": "^14.2.10",
     "@angular/compiler-cli": "^14.2.10",
     "@angular/language-service": "^14.2.10",
     "@compodoc/compodoc": "^1.1.11",
@@ -83,6 +86,13 @@
     "tslint": "~6.1.0",
     "typescript": "~4.6.4"
   },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead",
+    "not IE 9-11"
+  ],
   "resolutions": {
     "webpack": "^5.0.0"
   }

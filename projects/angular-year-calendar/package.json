@@ -1,13 +1,14 @@
 {
   "name": "@iomechs/angular-year-calendar",
-  "version": "0.1.8",
+  "version": "1.0.0",
   "dependencies": {
     "tslib": "^2.0.0"
   },
   "peerDependencies": {
-    "@angular/cdk": "^9.2.4",
+    "@angular/cdk": "14.2.7",
     "@angular/common": "^14.2.10",
     "@angular/core": "^14.2.10",
     "date-fns": "^2.5.1"
-  }
+  },
+  "type": "module"
 }

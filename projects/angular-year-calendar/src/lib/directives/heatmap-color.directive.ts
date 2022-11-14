@@ -1,5 +1,6 @@
 import { Directive, Input, ElementRef, OnInit, SimpleChanges, OnChanges } from '@angular/core';
 import tinyColor from 'tinycolor2';
+
 @Directive({
   selector: '[ycHeatmapColor]'
 })

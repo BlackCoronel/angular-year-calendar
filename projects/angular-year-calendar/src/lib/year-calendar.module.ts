@@ -15,11 +15,6 @@ import { WeekNumberPipe } from './pipes/week-number/week-number.pipe';
   imports: [
     CommonModule,
     OverlayModule
-  ],
-  exports: [
-    YearCalendarComponent,
-    HeatmapColorDirective,
-    WeekNumberPipe
   ]
 })
 export class YearCalendarModule {
