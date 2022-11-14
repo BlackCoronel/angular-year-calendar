@@ -1,6 +1,5 @@
-import { NgModule } from '@angular/core';
+import {ModuleWithProviders, NgModule} from '@angular/core';
 import { YearCalendarComponent } from './components/year-calendar/year-calendar.component';
-import { ModuleWithProviders } from '@angular/compiler/src/core';
 import { YearCalendarService } from './year-calendar.service';
 import { CommonModule } from '@angular/common';
 import { HeatmapColorDirective } from './directives/heatmap-color.directive';
@@ -24,7 +23,7 @@ import { WeekNumberPipe } from './pipes/week-number/week-number.pipe';
   ]
 })
 export class YearCalendarModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<YearCalendarModule> {
     return {
       ngModule: YearCalendarModule,
       providers: [
