@@ -1,20 +1,22 @@
 # Angular Year Calendar
-##### @iomechs/angular-year-calendar
+##### @lunia/angular-year-calendar
+##### Forked from @iomechs/angular-year-calendar
+##### Compatible with Angular 14
 
 [![Actions Status](https://github.com/iomechs/angular-year-calendar/workflows/CI/badge.svg)](https://github.com/iomechs/angular-year-calendar/actions)
 
 
-<a href="https://www.npmjs.com/package/@iomechs/angular-year-calendar"><img src="https://img.shields.io/npm/v/@iomechs/angular-year-calendar.svg" alt="npm version" ></a>
-<a href="https://www.npmjs.com/package/@iomechs/angular-year-calendar"><img src="https://img.shields.io/github/stars/IOMechs/angular-year-calendar.svg?style=social&label=Star&style=flat-square" alt="github stars" ></a>
+<a href="https://www.npmjs.com/package/@lunia/angular-year-calendar"><img src="https://img.shields.io/npm/v/@lunia/angular-year-calendar.svg" alt="npm version" ></a>
+<a href="https://www.npmjs.com/package/@lunia/angular-year-calendar"><img src="https://img.shields.io/github/stars/IOMechs/angular-year-calendar.svg?style=social&label=Star&style=flat-square" alt="github stars" ></a>
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-<a href="https://www.npmjs.com/package/@iomechs/angular-year-calendar"><img src="https://img.shields.io/npm/dt/@iomechs/angular-year-calendar.svg?style=flat-square" alt="npm downloads total" ></a>
-<a href="https://www.npmjs.com/package/ngx-device-detector"><img src="https://img.shields.io/npm/dm/@iomechs/angular-year-calendar.svg" alt="npm downloads/month" ></a>
+<a href="https://www.npmjs.com/package/@lunia/angular-year-calendar"><img src="https://img.shields.io/npm/dt/@lunia/angular-year-calendar.svg?style=flat-square" alt="npm downloads total" ></a>
+<a href="https://www.npmjs.com/package/ngx-device-detector"><img src="https://img.shields.io/npm/dm/@lunia/angular-year-calendar.svg" alt="npm downloads/month" ></a>
 
 
 A simple, easily to use Year calendar for your Angular apps.
 
-![@iomechs/angular-year-calendar](https://i.imgur.com/IS6Sn66.gif)
+![@lunia/angular-year-calendar](https://i.imgur.com/IS6Sn66.gif)
 
 
 ## Demo
@@ -33,17 +35,17 @@ The Angular Year Calendar library depends on [date-fns](https://www.npmjs.com/pa
 
 Install the package in your project's folder by using npm or yarn:
 ```bash
-npm install @iomechs/angular-year-calendar --save
+npm install @lunia/angular-year-calendar --save
 
 # OR
 
-yarn add @iomechs/angular-year-calendar -S
+yarn add @lunia/angular-year-calendar -S
 ```
 
 Import YearCalendarModule in your AppModule as below:
 
 ```typescript
-import { YearCalendarModule } from '@iomechs/angular-year-calendar';
+import { YearCalendarModule } from '@lunia/angular-year-calendar';
 
 @NgModule({
   declarations: [
