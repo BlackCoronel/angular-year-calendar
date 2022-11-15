@@ -1,5 +1,5 @@
 import {ModuleWithProviders, NgModule} from '@angular/core';
-import { YearCalendarComponent } from './components/year-calendar/year-calendar.component';
+import { YearCalendarComponent } from './year-calendar.component';
 import { YearCalendarService } from './year-calendar.service';
 import { CommonModule } from '@angular/common';
 import { HeatmapColorDirective } from './directives/heatmap-color.directive';
@@ -15,6 +15,10 @@ import { WeekNumberPipe } from './pipes/week-number/week-number.pipe';
   imports: [
     CommonModule,
     OverlayModule
+  ],
+  exports: [
+    YearCalendarComponent,
+    WeekNumberPipe
   ]
 })
 export class YearCalendarModule {

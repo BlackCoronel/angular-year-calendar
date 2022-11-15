@@ -9,10 +9,10 @@ import {
   ViewChild,
   TemplateRef
 } from '@angular/core';
-import {YearCalendarService} from '../../year-calendar.service';
-import {YCConfig} from '../../year-calendar-interfaces';
+import {YearCalendarService} from './year-calendar.service';
+import {YCConfig} from './year-calendar-interfaces';
 import {CdkOverlayOrigin} from '@angular/cdk/overlay';
-import {DEFAULT_CONFIG} from '../../constants/default-config';
+import {DEFAULT_CONFIG} from './constants/default-config';
 
 export const DAYS_OF_WEEK = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
 
