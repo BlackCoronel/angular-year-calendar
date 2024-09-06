@@ -1,13 +1,13 @@
 {
   "name": "@blackcoronel/angular-year-calendar",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "dependencies": {
     "tslib": "^2.0.0"
   },
   "peerDependencies": {
-    "@angular/cdk": "14.2.7",
-    "@angular/common": "^14.2.10",
-    "@angular/core": "^14.2.10",
+    "@angular/cdk": "^17.3.10",
+    "@angular/common": "^17.3.12",
+    "@angular/core": "^17.3.12",
     "date-fns": "^2.5.1"
   },
   "type": "module",
