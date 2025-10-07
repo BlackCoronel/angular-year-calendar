@@ -2,10 +2,11 @@ import { Component, OnInit, Input, ViewChild, TemplateRef, OnChanges, SimpleChan
 import { YCConfig, WeekNumberPipe } from 'projects/angular-year-calendar/src/public-api';
 
 @Component({
-  selector: 'ycd-example-section',
-  templateUrl: './example-section.component.html',
-  styleUrls: ['./example-section.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'ycd-example-section',
+    templateUrl: './example-section.component.html',
+    styleUrls: ['./example-section.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class ExampleSectionComponent implements OnInit, OnChanges {
   @Input() title = '';

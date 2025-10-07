@@ -3,9 +3,10 @@ import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { takeWhile } from 'rxjs/operators';
 
 @Component({
-  selector: 'ycd-config-side-bar',
-  templateUrl: './config-side-bar.component.html',
-  styleUrls: ['./config-side-bar.component.scss'],
+    selector: 'ycd-config-side-bar',
+    templateUrl: './config-side-bar.component.html',
+    styleUrls: ['./config-side-bar.component.scss'],
+    standalone: false
 })
 export class ConfigSideBarComponent implements OnInit, OnDestroy {
   @Input() width = 400;

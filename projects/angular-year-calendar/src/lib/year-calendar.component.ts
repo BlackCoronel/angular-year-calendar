@@ -18,9 +18,10 @@ export const DAYS_OF_WEEK = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
 
 
 @Component({
-  selector: 'yc-year-calendar',
-  templateUrl: './year-calendar.component.html',
-  styleUrls: ['./year-calendar.component.scss']
+    selector: 'yc-year-calendar',
+    templateUrl: './year-calendar.component.html',
+    styleUrls: ['./year-calendar.component.scss'],
+    standalone: false
 })
 export class YearCalendarComponent implements OnInit, OnChanges {
   @Input() selectedDate: Date = new Date();

@@ -4,7 +4,8 @@ import { DEFAULT_WEEK } from '../../constants/default-config';
 import { YCConfig } from '../../year-calendar-interfaces';
 
 @Pipe({
-  name: 'weekNumber'
+    name: 'weekNumber',
+    standalone: false
 })
 export class WeekNumberPipe implements PipeTransform {
 

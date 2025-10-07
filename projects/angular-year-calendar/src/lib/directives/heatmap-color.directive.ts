@@ -2,7 +2,8 @@ import { Directive, Input, ElementRef, OnInit, SimpleChanges, OnChanges } from '
 import tinyColor from 'tinycolor2';
 
 @Directive({
-  selector: '[ycHeatmapColor]'
+    selector: '[ycHeatmapColor]',
+    standalone: false
 })
 export class HeatmapColorDirective implements OnInit, OnChanges {
   @Input() value = 0;
